@@ -43,7 +43,7 @@ if __name__ == '__main__':
     data = _parse_lotto(soup)
     # print(data)
     client = _db_connect()
-    cllt = client.test
+    cllct = client.test
     print(str(data))
-    cllt.insert(str(data))
+    cllct.insert(str(data))
     # print(client)
