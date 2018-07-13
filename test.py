@@ -21,7 +21,7 @@ def _parse_url(url):
         use_url = url+'&nowPage='+str(i+1)+'&drwNoStart=1&drwNoEnd='+str(len(diff_weeks_list))
         source_code = requests.get(use_url)
         plain_text = source_code.text
-        use_soup = BeautifulSoup(plain_text, 'lxml')
+        use_soup = BeautifulSoup(plain_text,'lxml')
         trs = use_soup.select('.tblType1.mt40 > tbody > tr')
         if(len(trs)!=12):
             end = 'false'
@@ -43,4 +43,7 @@ if __name__ == '__main__':
     data = _parse_lotto(soup)
     # print(data)
     client = _db_connect()
+    cllt = client.test
+    print(str(data))
+    cllt.insert(str(data))
     # print(client)

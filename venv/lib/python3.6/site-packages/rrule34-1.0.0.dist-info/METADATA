@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: rrule34
+Version: 1.0.0
+Summary: Python dateutil rrule tools.Noticeably natural language formatting of recurences.
+Home-page: UNKNOWN
+Author: Florian Mounier @ Kozea
+Author-email: fmounier@kozea.fr
+License: UNKNOWN
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Provides: rrule34
+Requires-Dist: babel
+Requires-Dist: python-dateutil
+
+UNKNOWN
+
+
