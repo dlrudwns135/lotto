@@ -1,0 +1,15 @@
+name: Lotto purchase (cron)
+on:
+  schedule:
+    - cron: '0 3 * * 6'
+
+jobs:
+  run-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: rich-automation/lotto-action@latest
+        with:
+          id: ${{ secrets.ID }}
+          pwd: ${{ secrets.PASSWORD }}
+          token: ${{ secrets.GITHUB_TOKEN }}
