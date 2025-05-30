@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: rich-automation/lotto-action@latest
+      - uses: rich-automation/lotto-action@1.2.0
         with:
           id: ${{ secrets.ID }}
           pwd: ${{ secrets.PASSWORD }}
