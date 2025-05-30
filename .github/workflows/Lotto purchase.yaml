@@ -2,6 +2,8 @@ name: Lotto purchase (cron)
 on:
   schedule:
     - cron: '0 3 * * 6'
+  workflow_dispatch:
+  
 
 jobs:
   run-actions:
